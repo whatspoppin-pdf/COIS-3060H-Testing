@@ -141,9 +141,9 @@
 
   <script>
     // Flakiness: reversing items about 1 in 2 runs
-   // if (window._reverseItems === undefined) {
-     // window._reverseItems = Math.random() < 0.5;
-    //}
+    if (window._reverseItems == undefined) {
+      window._reverseItems = Math.random() < 0.5;
+    }
 
     // Tab switching
     document.querySelectorAll('.tab-btn').forEach(btn => {
